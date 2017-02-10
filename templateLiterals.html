@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>repeat</title>
+</head>
+<body>
+
+
+<script>
+    //template Literals
+    //es35
+    var text = "this string contains \"double quotes\" which are escaped.";
+    //es6
+    let text6 = `this string contains "double quotes" which don't need to be escaped anymore.`;
+
+    //es35
+    var name = 'tiger';
+    var age = 25;
+    console.log('My cat is named ' + name + ' and is ' + age + ' years old.');
+    //es6
+    const name6 = 'Tiger';
+    const age6 = 13;
+
+    console.log(`My cat is named ${name6} and is ${age6} years old.`);
+    //  \n
+    //es5
+    var text1 = (
+        'cat\n' +
+        'dog\n' +
+        'nickelodeon'
+    );
+    var text2 = [
+        'cat',
+        'dog',
+        'nickelodeon'
+    ].join('\n');
+    //es6
+    let text3 = ( `cat
+dog
+nickelodeon`
+    );
+    console.log(text1);
+    console.log(text2);
+    console.log(text3);
+
+    //    **字符串模板字面量** 内部可以使用表达式，像这样：
+    let today = new Date();
+    let text4 = `The time and date is ${today.toLocaleString()}`;
+    console.log(text4)
+</script>
+</body>
+</html>

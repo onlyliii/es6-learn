@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>repeat</title>
+</head>
+<body>
+
+
+<script>
+    function Person(name, age, gender) {
+        this.name = name;
+        this.age = age;
+        this.genter = genter;
+    }
+    Person.prototype.incrementAge = function () {
+        return this.age += 1;
+    };
+    //  继承
+    function Personal(name, age, gender, occupation, hobby) {
+        Person.call(name, age, genter);
+        this.occupation = occupation;
+        this.hobby = hobby;
+    }
+    Personal.prototype = Object.create(Person.prototype);
+    Personal.prototype.constructor = Personal;
+    Personal.prototype.incrementAge = function () {
+        return Person.prototype.incrementAge.call(this) += 20;
+    };
+
+</script>
+</body>
+</html>

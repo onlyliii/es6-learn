@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var snack = 'hello';
+    function getFood(food) {
+        if (food) {
+            var snack = 'friskies';
+            return snack;
+        }
+        return snack;
+    }
+    alert(getFood(false)); // undefined
+    alert(snack); // hello
+</script>
+</body>
+</html>
